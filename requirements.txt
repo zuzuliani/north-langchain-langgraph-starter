@@ -1,6 +1,7 @@
 langchain-groq
 langchain
 python-dotenv
+ipykernel
 langchain-community
 langchain-ollama
 pypdf
