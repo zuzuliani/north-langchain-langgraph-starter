@@ -36,7 +36,7 @@ cd Tutorial_02
 
 ### 2. Launch Jupyter Notebook
 ```bash
-jupyter notebook Tutorial_2_Working_with_Language_Models.ipynb
+jupyter notebook Tutorial_02_Working_with_Language_Models.ipynb
 ```
 
 ## What's Included
@@ -49,7 +49,7 @@ jupyter notebook Tutorial_2_Working_with_Language_Models.ipynb
 - Prompt engineering techniques
 
 ### Files
-- `Tutorial_2_Working_with_Language_Models.ipynb`: Main tutorial notebook
+- `Tutorial_02_Working_with_Language_Models.ipynb`: Main tutorial notebook
 - `examples/`: Directory containing example prompts and chains
 - `utils/`: Helper functions for working with LLMs
 - `README.md`: This documentation file
