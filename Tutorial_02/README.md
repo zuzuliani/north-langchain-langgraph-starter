@@ -22,14 +22,14 @@ Welcome to the second tutorial in our LangChain and LangGraph series! In this tu
 
 #### For Linux/macOS:
 ```bash
-cd langchain-langgraph-tutorial
+cd langchain-langgraph-starter
 source venv/bin/activate
 cd Tutorial_02
 ```
 
 #### For Windows:
 ```cmd
-cd langchain-langgraph-tutorial
+cd langchain-langgraph-starter
 .\venv\Scripts\activate
 cd Tutorial_02
 ```
