@@ -21,8 +21,8 @@ Welcome to the first tutorial in our LangChain and LangGraph series! In this tut
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/doomL/langchain-langgraph-tutorial
-cd langchain-langgraph-tutorial
+git clone https://github.com/rahulsamant37/langchain-langgraph-starter
+cd langchain-langgraph-starter
 ```
 
 ### 2. Create and Activate Virtual Environment
@@ -31,14 +31,14 @@ cd langchain-langgraph-tutorial
 ```bash
 python3 -m venv venv
 source venv/bin/activate
-cd Tutorial01
+cd Tutorial_01
 ```
 
 #### For Windows:
 ```cmd
 python -m venv venv
 .\venv\Scripts\activate
-cd Tutorial01
+cd Tutorial_01
 ```
 
 ### 3. Install Required Packages
@@ -70,7 +70,7 @@ LANGSMITH_API_KEY=your-langsmith-key-here  # Optional for tracking LLM calls
 ### 5. Launch Jupyter Notebook
 
 ```bash
-jupyter notebook Tutorial_1_Introduction_to_LangChain.ipynb
+jupyter notebook Tutorial_01_Introduction_to_LangChain.ipynb
 ```
 
 ### 6. Follow the Tutorial
