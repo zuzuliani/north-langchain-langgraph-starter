@@ -30,3 +30,4 @@ redis>=5.0.1
 # Utilities
 python-jose[cryptography]>=3.3.0
 passlib[bcrypt]>=1.7.4
+openai
