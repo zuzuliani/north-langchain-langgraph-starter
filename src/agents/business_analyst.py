@@ -1,7 +1,6 @@
 from typing import AsyncGenerator, Dict, Any
-from langchain.chat_models import ChatOpenAI
+from langchain_community.chat_models import ChatOpenAI
 from langchain.schema import HumanMessage, SystemMessage
-from langchain.callbacks.streaming import StreamingStdOutCallbackHandler
 from src.memory.memory_manager import memory_manager
 from src.config.settings import settings
 import json
@@ -10,10 +9,9 @@ from datetime import datetime
 class BusinessAnalystAgent:
     def __init__(self):
         self.llm = ChatOpenAI(
-            model="gpt-4-turbo-preview",  # or gpt-3.5-turbo if you prefer
+            model="gpt-4o",  # Default to gpt-4o
             temperature=0.7,
-            streaming=True,
-            callbacks=[StreamingStdOutCallbackHandler()]
+            streaming=True
         )
         
         # System message to define the agent's role and capabilities
