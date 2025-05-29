@@ -14,13 +14,29 @@ class Settings(BaseSettings):
     OPENAI_API_KEY: Optional[str] = os.getenv("OPENAI_API_KEY")
     
     # Database Settings
-    SUPABASE_URL: Optional[str] = os.getenv("SUPABASE_URL")
-    SUPABASE_KEY: Optional[str] = os.getenv("SUPABASE_KEY")
+    _supabase_url: Optional[str] = os.getenv("SUPABASE_URL")
+    _supabase_key: Optional[str] = os.getenv("SUPABASE_KEY")
     
     # Redis Settings (for Railway)
     REDIS_URL: Optional[str] = os.getenv("REDIS_URL")
     
     class Config:
         case_sensitive = True
+
+    @property
+    def SUPABASE_URL(self) -> Optional[str]:
+        return self._supabase_url
+
+    @SUPABASE_URL.setter
+    def SUPABASE_URL(self, value: str):
+        self._supabase_url = value
+
+    @property
+    def SUPABASE_KEY(self) -> Optional[str]:
+        return self._supabase_key
+
+    @SUPABASE_KEY.setter
+    def SUPABASE_KEY(self, value: str):
+        self._supabase_key = value
 
 settings = Settings() 
